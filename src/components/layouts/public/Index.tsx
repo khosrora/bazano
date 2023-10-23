@@ -8,12 +8,12 @@ interface MyProps {
 
 function Index({ children }: MyProps) {
     return (
-        <>
+        <div className='max-w-7xl m-auto'>
             <Header />
             <main>
                 {children}
             </main>
-        </>
+        </div>
     )
 }
 
