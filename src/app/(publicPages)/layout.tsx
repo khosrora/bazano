@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import './globals.css'
+import '@/app/globals.css'
 
 import Index from '@/components/layouts/public/Index'
 import { dana } from '@/utils/localFont'

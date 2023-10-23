@@ -1,5 +1,6 @@
 import Logo from "@/components/shared/Logo";
 import Image from "next/image";
+import SliderBlogs from "./SliderBlogs";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
             با کلیک بر روی لینک زیر میتوانید شرکت های خدماتی درون
             پارک علم وفناوری را مشاهده کرده و با توجه به خدمت مورد نیاز خود ان را انتخاب کرده همین الان بر روی لینک زیر کلیک کنید و از خدمات شرکت ها استفاده کنید
           </p>
+          <button className="btn btn-outline btn-primary">مشاهده خدمات</button>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center p-4 lg:flex-row-reverse lg:justify-between">
@@ -50,6 +52,7 @@ export default function Home() {
           <p className="text-base font-light">
             با کلیک بر روی لینک زیر میتوانید شرکت های دارای محصول درون پارک علم وفناوری را مشاهده کرده و با توجه به محصول مورد نیاز خود ان را انتخاب کرده همین الان بر روی لینک زیر کلیک کنید و از محصولات شرکت ها استفاده کنید
           </p>
+          <button className="btn btn-outline btn-primary">مشاهده خدمات</button>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center p-4 lg:flex-row lg:justify-between">
@@ -65,6 +68,7 @@ export default function Home() {
             با کلیک بر روی لینک زیر میتوانید شرکت های خدماتی درون
             پارک علم وفناوری را مشاهده کرده و با توجه به خدمت مورد نیاز خود ان را انتخاب کرده همین الان بر روی لینک زیر کلیک کنید و از خدمات شرکت ها استفاده کنید
           </p>
+          <button className="btn btn-outline btn-primary">مشاهده خدمات</button>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center p-4 lg:flex-row-reverse lg:justify-between">
@@ -79,8 +83,13 @@ export default function Home() {
           <p className="text-base font-light">
             با کلیک بر روی لینک زیر میتوانید شرکت های دارای محصول درون پارک علم وفناوری را مشاهده کرده و با توجه به محصول مورد نیاز خود ان را انتخاب کرده همین الان بر روی لینک زیر کلیک کنید و از محصولات شرکت ها استفاده کنید
           </p>
+          <button className="btn btn-outline btn-primary">مشاهده خدمات</button>
         </div>
       </div>
+
+
+      <SliderBlogs />
+
     </main>
   )
 }
