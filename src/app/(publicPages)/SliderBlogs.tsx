@@ -13,14 +13,37 @@ function SliderBlogs() {
         <Swiper
             spaceBetween={30}
             slidesPerView={3}
-            onSwiper={(swiper: any) => console.log(swiper)}
+            breakpoints={{
+                0: {
+                    slidesPerView: 1,
+                },
+                900: {
+                    slidesPerView: 2,
+                },
+                1000: {
+                    slidesPerView: 3
+                },
+                1500: {
+                    slidesPerView: 4
+                },
+                1700: {
+                    slidesPerView: 5
+                }
+            }}
+        // onSwiper={(swiper: any) => console.log(swiper)}
         >
             {
-                [1, 2, 3, 4, 5, 6].map((i , index) =>
+                [1, 2, 3, 4, 5, 6].map((i, index) =>
                     <SwiperSlide key={index}>
-                        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                        <div className="card card-compact bg-base-100">
                             <figure>
-                                <Image src="https://www.totalika.org/wp-content/uploads/2019/04/Safe-Workplace-has-several-teams-working-together.jpg" alt="Shoes" />
+                                <img
+                                    className='w-full h-[200px]'
+                                    src="https://blog.hubspot.com/hs-fs/hubfs/teamwork-quotes-2.jpg?width=595&height=400&name=teamwork-quotes-2.jpg"
+                                    alt="Shoes"
+                                    width={200}
+                                    height={200}
+                                />
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title">بهترین ها</h2>

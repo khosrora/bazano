@@ -1,5 +1,6 @@
 'use client'
 import { ReactNode } from 'react';
+import Footer from './Footer';
 import Header from './Header';
 
 interface MyProps {
@@ -13,6 +14,7 @@ function Index({ children }: MyProps) {
             <main>
                 {children}
             </main>
+            <Footer />
         </div>
     )
 }

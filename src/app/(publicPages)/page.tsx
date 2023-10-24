@@ -2,6 +2,8 @@ import Logo from "@/components/shared/Logo";
 import Image from "next/image";
 import SliderBlogs from "./SliderBlogs";
 
+import { PiPlayFill } from 'react-icons/pi'
+
 export default function Home() {
   return (
     <main className="">
@@ -87,9 +89,18 @@ export default function Home() {
         </div>
       </div>
 
-
-      <SliderBlogs />
-
+      <div className="bg-[#FCFBF6] p-4">
+        <div className="flex justify-between items-center mb-4">
+          <div className="flex justify-start items-center gap-x-2">
+            <PiPlayFill size={28} color='#6E3FF3' style={{ transform: 'rotate(180deg)' }} />
+            <p className="font-bold text-base">مقالات</p>
+          </div>
+          <button className="btn-sm btn-primary bg-[#6E3FF3] rounded-md">
+            مشاهده همه
+          </button>
+        </div>
+        <SliderBlogs />
+      </div>
     </main>
   )
 }

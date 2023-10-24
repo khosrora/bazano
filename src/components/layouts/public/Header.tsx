@@ -11,6 +11,7 @@ import Link from 'next/link'
 function Header() {
 
   const openModal = () => {
+    console.log('object');
     let modal: any = document?.getElementById('my_modal_2');
     modal.showModal();
   }
@@ -28,7 +29,6 @@ function Header() {
         <div onClick={() => openModal()} className="border border-zinc-400 flex justify-center items-center p-2 rounded-xl cursor-pointer">
           <AiOutlineUser size={24} />
         </div>
-        <GetPhoneModal />
       </div>
       <div className="hidden lg:flex lg:justify-between lg:items-center lg:p-4">
         <Logo
@@ -77,11 +77,12 @@ function Header() {
             </Link>
           </li>
         </ul>
-        <button className="btn btn-primary bg-[#6E3FF3]">
+        <button onClick={() => openModal()} className="btn btn-primary bg-[#6E3FF3]">
           <AiOutlineUser size={24} />
           ورود / عضویت
         </button>
       </div>
+      <GetPhoneModal />
     </header>
   )
 }
